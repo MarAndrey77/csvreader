@@ -1,0 +1,3 @@
+,Alpha,Beta,Cell,LongName
+30,1,2,=LongName1-Beta30,=Alpha1/Alpha30
+1,10,20,=Alpha1+Beta1,=Cell1*2

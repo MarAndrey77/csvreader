@@ -1,0 +1,15 @@
+csvreader
+
+*.o
+
+
+*.d
+
+.DS_Store
+
+*.swp
+*.swo
+*~
+
+.vscode/
+.idea/

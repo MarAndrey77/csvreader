@@ -48,3 +48,15 @@ void validate_unique_rows(Rows* rows) {
 
     free(copy);
 }
+
+void free_rows(Rows* rows) {
+    if (rows == NULL) {
+        return;
+    }
+    free(rows->data);
+    
+    rows->data = NULL;
+    rows->count = 0;
+    rows->capacity = 0;
+    free(rows);
+}

@@ -43,3 +43,18 @@ void validate_unique_columns(Columns* columns) {
 
     free(copy);
 }
+
+void free_columns(Columns* columns) {
+    if (!columns) return;
+
+    for (int i = 0; i < columns->count; i++) {
+        free(columns->data[i]);
+    }
+
+    free(columns->data);  
+    
+    columns->data = NULL;
+    columns->count = 0;
+    columns->capacity = 0;
+    free(columns);
+}

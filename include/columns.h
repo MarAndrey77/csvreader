@@ -10,5 +10,6 @@ typedef struct {
 void init_columns(Columns* columns);
 void add_column(Columns* columns, char* new_column);
 void validate_unique_columns(Columns* columns);
+void free_columns(Columns* columns);
 
 #endif
